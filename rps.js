@@ -17,9 +17,9 @@ function numberToChoice(number) {
 
 function decideWinner(humanChoice,botChoice) {
     var rpsDatabase = {
-        'rock' : {'rock': 0.5, 'paper': 1, 'scissor': 0},
-        'paper' : {'rock': 0, 'paper': 0.5, 'scissor': 1},
-        'scissor' : {'rock': 1, 'paper': 0, 'scissor': 0.5}
+        'rock' : {'rock': 0.5, 'paper': 0, 'scissor': 1},
+        'paper' : {'rock': 1, 'paper': 0.5, 'scissor': 0},
+        'scissor' : {'rock': 0, 'paper': 1, 'scissor': 0.5}
     };
     var yourScore = rpsDatabase[humanChoice][botChoice];
     var botScore = rpsDatabase[botChoice][humanChoice];
